@@ -23,7 +23,7 @@ response = client.chat.completions.create(
     messages=[
         {"role": "user", "content": prompt},
         
-    ],stream=True
+    ],max_tokens=100,stream=True
 )
 
 for x in response:
